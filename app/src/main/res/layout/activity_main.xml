@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mycook.dell.example.com.patientapp.MainActivity">
+
+
+    <EditText
+        android:id="@+id/patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Patient Name"
+        android:inputType="textPersonName"
+        />
+
+
+    <EditText
+        android:id="@+id/patient_disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Patient Disease"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/patient_medication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Medication provided"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/patient_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date of arrival"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/patient_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="cost"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/insert_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert"/>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:text="View Patients"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:text="search patients"/>
+</LinearLayout>

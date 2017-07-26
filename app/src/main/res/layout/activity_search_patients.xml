@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mycook.dell.example.com.patientapp.search_patients">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/searching"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/search"/>
+
+        <EditText
+            android:id="@+id/s_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:fontFamily="Helvatica"
+            android:hint="Search by name"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="7dp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/searchingdate"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/search_icon_date"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/search"/>
+
+        <EditText
+            android:id="@+id/s_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:fontFamily="Helvatica"
+            android:hint="Search by date"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="7dp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+<android.support.v7.widget.RecyclerView
+    android:layout_marginTop="5sp"
+    android:id="@+id/show_patients"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

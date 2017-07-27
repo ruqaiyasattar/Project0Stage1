@@ -16,6 +16,8 @@
         tools:layout_editor_absoluteX="8dp">
 
         <ImageView
+            android:focusable="true"
+            android:clickable="true"
             android:id="@+id/search_icon"
             android:layout_width="32dp"
             android:layout_height="32dp"
@@ -43,6 +45,8 @@
         tools:layout_editor_absoluteX="8dp">
 
         <ImageView
+            android:focusable="true"
+            android:clickable="true"
             android:id="@+id/search_icon_date"
             android:layout_width="32dp"
             android:layout_height="32dp"

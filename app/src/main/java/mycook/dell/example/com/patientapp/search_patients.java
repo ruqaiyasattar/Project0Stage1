@@ -36,13 +36,20 @@ public class search_patients extends AppCompatActivity implements View.OnClickLi
 search_icon_date.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        List<Patient> patients = new Select().from(Patient.class)
-                .where("Patient_date = '" + s_date.getText().toString() + "'")
-                .execute();
-        mPatientsListAdapter = new PatientsListAdapter(patients);
-        mRecyclerView.setAdapter(mPatientsListAdapter);
-        mLayoutManager = new LinearLayoutManager(search_patients.this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
+
+            List<Patient> patients = new Select().from(Patient.class)
+                    .where("Patient_date = '" + s_date.getText().toString() + "'")
+                    .execute();
+
+
+            mPatientsListAdapter = new PatientsListAdapter(patients);
+            mRecyclerView.setAdapter(mPatientsListAdapter);
+            mLayoutManager = new LinearLayoutManager(search_patients.this);
+            mRecyclerView.setLayoutManager(mLayoutManager);
+if (patients.size()<=0){
+    Toast.makeText(search_patients.this,"above data is not found in list",Toast.LENGTH_SHORT).show();
+}
+
 
     }
 });
@@ -67,7 +74,9 @@ search_icon_date.setOnClickListener(new View.OnClickListener() {
             mRecyclerView.setAdapter(mPatientsListAdapter);
             mLayoutManager = new LinearLayoutManager(this);
             mRecyclerView.setLayoutManager(mLayoutManager);
-
+        if (patients.size()<=0){
+            Toast.makeText(search_patients.this,"above data is not found in list",Toast.LENGTH_SHORT).show();
+        }
 }
 }
 
